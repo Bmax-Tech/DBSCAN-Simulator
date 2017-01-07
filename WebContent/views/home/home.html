@@ -1,0 +1,53 @@
+<div class="section">
+    <div class="row">
+        <div class="section-heading"><i class="fa fa-cog" aria-hidden="true"></i>&nbsp;&nbsp;Config</div>
+        <div class="col-lg-12 section-content">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label >Minimum Points</label>
+                    <input type="number" class="form-control" ng-model="minimumPoints">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Threshold Distance</label>
+                    <input type="number" class="form-control" ng-model="thresholdDistance">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="section-heading"><i class="fa fa-dot-circle-o" aria-hidden="true"></i>&nbsp;&nbsp;Set Points</div>
+        <div class="col-lg-12 section-content">
+            <div class="col-lg-6">
+                <div class="col-lg-6 no-paddding-lr" style="padding-right:15px !important">
+                    <div class="form-group">
+                        <label >X Point</label>
+                        <input type="number" class="form-control" placeholder="enter point x" ng-model="pointX">
+                    </div>
+                </div>
+                <div class="col-lg-6 no-paddding-lr">
+                    <div class="form-group">
+                        <label>Y Point</label>
+                        <input type="number" class="form-control" placeholder="enter point y" ng-model="pointY">
+                    </div>
+                </div>
+                <button class="btn btn-primary font-1" ng-click="addPoint()"><i class="fa fa-plus-circle" aria-hidden="true"></i>&nbsp;&nbsp;Add Point</button>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label >Points List</label>
+                    <ul class="points-list">
+                        <li ng-repeat="item in pointsList">
+                            <div>#{{ $index+1 }}&nbsp;&nbsp;&nbsp;<span class="badge">X - {{ item.x }}</span>&nbsp;<span class="badge">Y - {{ item.y }}</span><i class="fa fa-times drop-link" title="remove point" title-direction="right" aria-hidden="true" ng-click="removePoint($index)"></i></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="text-align:center;padding-bottom:10px">
+        <hr>
+        <button class="btn btn-warning btn-lg font-1" ng-click="next()" ><i class="fa fa-angle-right" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Next</button>
+    </div>
+</div>

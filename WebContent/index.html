@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Orbitron|Quicksand" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/angular-tooltips/dist/angular-tooltips.min.css" />
+    
+    <!--custom styling-->
+    <link rel="stylesheet" href="assets/styles.css">
+
+    <!-- JS -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/sweetalert2/dist/sweetalert2.min.js"></script>    
+    <script src="bower_components/angular-tooltips/dist/angular-tooltips.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/d3.chart/d3.chart.min.js"></script>
+    <script src="bower_components/highchartsjs/highcharts.js"></script>
+    <script src="bower_components/highchartsjs/export.js"></script>
+    <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    
+    <script src="app.js"></script>
+    <script src="route.js"></script>
+    
+    <!-- Controllers -->
+    <script src="views/home/home.js"></script>
+    <script src="views/charts/charts.js"></script>
+    
+</head>
+<body ng-app="DBSCANApp">
+    <div class="container custom-container">
+        <!-- NAVIGATION -->
+        <nav class="navbar navbar-inverse custom-nav" role="navigation">
+            <div class="navbar-header">
+                <a class="navbar-brand" ui-sref="home">
+                    <img src="assets/images/logo.svg" class="logo">
+                    <h3 class="nav-heading">Multi Agent Data Mining</h3>
+                </a>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <div class="container sub-container">
+            <div ui-view></div>
+        </div>
+    </div>
+</body>
+</html>

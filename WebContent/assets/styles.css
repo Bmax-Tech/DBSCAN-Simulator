@@ -1,0 +1,98 @@
+body{
+    background:
+    linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+    background-color: #131313;
+    background-size: 20px 20px;
+}
+.custom-container{
+    width: 75%;
+    padding: 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.21);
+    background: rgb(247, 247, 247);
+}
+.row{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.no-paddding-lr{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.navbar { 
+    border-radius:0;
+}
+.navbar-brand{
+    height: auto !important;
+}
+.custom-nav{
+    background-color: #2063c7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+.logo{
+    float: left;
+    background: #FFF;
+    width: 10%;
+    padding: 7px;
+    border-radius: 100px;
+}
+.nav-heading{
+    float: left;
+    color: #FFF;
+    margin-top: 24px;
+    margin-left: 25px;
+    font-family: 'Orbitron', sans-serif;
+}
+.sub-container{
+    width: 100%;
+    padding: 10px 0px !important;
+}
+.section-heading{
+    background: #c1c1c1;
+    padding: 10px;
+    color: #fff;
+    font-family: 'Bungee Inline', cursive;
+}
+.section-content{
+    padding: 15px 20px 20px 20px;
+}
+.form-group>label{
+    font-family: 'Quicksand', sans-serif;
+}
+.points-list{
+    list-style: none;
+    padding: 0px 20px;
+}
+.points-list>li{
+    padding: 5px;
+}
+.points-list>li>div{
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px;
+}
+.drop-link{
+    cursor: pointer;
+    color: #818181;
+    float: right;
+}
+.font-1{
+    font-family: 'Bungee Inline', cursive;
+}
+#chart{
+    min-width: 972px;
+    height: 100%;
+    max-width: 972px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.21);
+}
+#highcharts-0>svg>text{
+    display: none;
+}
